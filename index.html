@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patchandi Yugan Kumar | Portfolio</title>
+    <!-- Tailwind CSS for modern utility-first styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for professional layout icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .tab-active { border-color: #3b82f6; color: #3b82f6; font-weight: 600; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased min-h-screen flex flex-col">
+
+    <!-- TOP PROFILE BANNER & HERO SECTION -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                
+                <!-- Profile Image & Core Details -->
+                <div class="flex flex-col sm:flex-row items-center gap-5 text-center sm:text-left">
+                    <!-- Profile Picture Placeholder -->
+                    <div class="w-24 h-24 rounded-full bg-gradient-to-tr from-blue-500 to-indigo-600 flex items-center justify-center text-white text-3xl font-bold shadow-md border-4 border-white overflow-hidden shrink-0">
+                        <!-- Replace src with your actual image file path once uploaded to GitHub (e.g., "profile.jpg") -->
+                        <img id="profile-img" src="https://via.placeholder.com/150" alt="YK" class="w-full h-full object-cover hidden" onerror="this.classList.add('hidden')">
+                        <span id="profile-initials">YK</span>
+                    </div>
+                    
+                    <div>
+                        <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">Patchandi Yugan Kumar</h1>
+                        <p class="text-blue-600 font-medium text-sm sm:text-base mt-1">
+                            Computer Science & Life Sciences Double Degree Undergraduate at NUS
+                        </p>
+                        <!-- Digital Coordinates/Contact Links -->
+                        <div class="flex flex-wrap justify-center sm:justify-start gap-x-4 gap-y-1 mt-2 text-xs sm:text-sm text-gray-500">
+                            <a href="mailto:patchandi_yugan_kumar@u.nus.edu" class="hover:text-blue-600 transition flex items-center gap-1.5"><i class="fa-regular fa-envelope"></i> Email</a>
+                            <a href="https://www.linkedin.com/in/yugan-kumar/" target="_blank" class="hover:text-blue-600 transition flex items-center gap-1.5"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                            <a href="https://github.com/yugan01" target="_blank" class="hover:text-blue-600 transition flex items-center gap-1.5"><i class="fa-brands fa-github"></i> GitHub</a>
+                            <span class="flex items-center gap-1.5 cursor-default"><i class="fa-solid fa-location-dot"></i> Singapore</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Summary Snippet (Great for quick vetting) -->
+                <div class="bg-gray-50 rounded-xl p-4 border border-gray-200 text-xs sm:text-sm max-w-sm w-full shadow-inner">
+                    <p class="font-semibold text-gray-900 mb-1 flex items-center gap-2"><i class="fa-solid fa-graduation-cap text-blue-500"></i> Education at NUS</p>
+                    <p class="text-gray-600 font-medium">B.Comp. Computer Science (Honours): <span class="text-blue-600 font-bold">4.70/5.0</span></p>
+                    <p class="text-gray-600 font-medium">B.Sc. Life Sciences (Honours): <span class="text-blue-600 font-bold">4.83/5.0</span></p>
+                    <p class="text-gray-400 text-[11px] mt-1 italic">Expected Graduation: Dec 2026</p>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN PORTFOLIO SHELL -->
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-grow w-full grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <!-- SIDEBAR: Core Tech Arsenal & Academic Accolades -->
+        <aside class="space-y-6 lg:col-span-1">
+            <!-- Technical Architecture / Core Skills -->
+            <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
+                <h3 class="text-sm font-bold uppercase tracking-wider text-gray-400 mb-3 flex items-center gap-2">
+                    <i class="fa-solid fa-code text-blue-500"></i> Core Skills
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-700 rounded-md text-xs font-medium border border-gray-200">Python</span>
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-700 rounded-md text-xs font-medium border border-gray-200">Java</span>
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-700 rounded-md text-xs font-medium border border-gray-200">Go</span>
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-700 rounded-md text-xs font-medium border border-gray-200">TypeScript</span>
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-700 rounded-md text-xs font-medium border border-gray-200">JavaScript</span>
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-700 rounded-md text-xs font-medium border border-gray-200">NodeJS</span>
+                    <span class="px-2.5 py-1 bg-gray-100 text-gray-700 rounded-md text-xs font-medium border border-gray-200">R</span>
+                    <span class="px-2.5 py-1 bg-blue-50 text-blue-700 rounded-md text-xs font-medium border border-blue-100">Deep Learning</span>
+                    <span class="px-2.5 py-1 bg-blue-50 text-blue-700 rounded-md text-xs font-medium border border-blue-100">Dynamic Programming</span>
+                    <span class="px-2.5 py-1 bg-blue-50 text-blue-700 rounded-md text-xs font-medium border border-blue-100">Software Engineering</span>
+                </div>
+            </div>
+
+            <!-- Publications -->
+            <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
+                <h3 class="text-sm font-bold uppercase tracking-wider text-gray-400 mb-3 flex items-center gap-2">
+                    <i class="fa-solid fa-book-open text-blue-500"></i> Publications
+                </h3>
+                <div class="space-y-3">
+                    <div class="text-xs">
+                        <p class="font-medium text-gray-800">"Fall risk prediction with wearables and fall risk questionnaire-based information in presence of missing data..."</p>
+                        <p class="text-gray-500 mt-1">Vellampalli, A. T., <strong>Patchandi Y. K.</strong>, et.al. — <span class="text-blue-600 font-semibold">AAAI-25 Student Abstract Program</span> (Accepted, Full paper in progress).</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Awards and distinctions -->
+            <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
+                <h3 class="text-sm font-bold uppercase tracking-wider text-gray-400 mb-3 flex items-center gap-2">
+                    <i class="fa-solid fa-trophy text-blue-500"></i> Distinctions
+                </h3>
+                <ul class="space-y-2 text-xs text-gray-600">
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-circle-check text-green-500 mt-0.5 shrink-0"></i>
+                        <span><strong>NUS Merit Scholarship</strong> (Bond-free undergraduate scholarship)</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-circle-check text-green-500 mt-0.5 shrink-0"></i>
+                        <span><strong>Dean's List</strong> (Academic Year 23/24 Semester 1)</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-circle-check text-green-500 mt-0.5 shrink-0"></i>
+                        <span><strong>Sinda Excellence Award</strong> (Outstanding performance in GCE A-Level examinations)</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fa-solid fa-circle-check text-green-500 mt-0.5 shrink-0"></i>
+                        <span><strong>Competent Communicator Award</strong> (Toastmasters International)</span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- TWO TABS CONTENT WINDOW -->
+        <section class="lg:col-span-2 flex flex-col">
+            
+            <!-- Tab Headers -->
+            <div class="flex border-b border-gray-200 mb-6 bg-white rounded-xl p-1 shadow-sm border">
+                <button onclick="switchTab('experience')" id="btn-experience" class="w-1/2 py-2.5 text-center text-sm font-medium transition rounded-lg tab-active border-b-2 border-transparent">
+                    <i class="fa-solid fa-briefcase mr-2"></i>Experience
+                </button>
+                <button onclick="switchTab('projects')" id="btn-projects" class="w-1/2 py-2.5 text-center text-sm font-medium transition text-gray-500 hover:text-blue-600 rounded-lg border-b-2 border-transparent">
+                    <i class="fa-solid fa-diagram-project mr-2"></i>Projects
+                </button>
+            </div>
+
+            <!-- TAB 1: EXPERIENCE PANEL -->
+            <div id="panel-experience" class="space-y-6">
+                <!-- Singapore-ETH Centre -->
+                <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:border-blue-200 transition duration-200">
+                    <div class="flex justify-between items-start flex-wrap gap-2 mb-3">
+                        <div>
+                            <h4 class="text-base sm:text-lg font-bold text-gray-900">ML Research Intern</h4>
+                            <p class="text-sm text-gray-600 font-medium">Singapore-ETH Centre, Future Health Technologies</p>
+                        </div>
+                        <span class="px-2.5 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-md">May 2025 - Aug 2025</span>
+                    </div>
+                    <ul class="list-disc pl-5 text-sm text-gray-600 space-y-2">
+                        <li>Designed a new metric comparison framework to evaluate performance variations across clinical imputation algorithms.</li>
+                        <li>Built robust binary prediction pipelines and implemented imputation-based classification workflows derived from literature.</li>
+                        <li>Conducted extensive data engineering and statistical validation using bootstrapped samples to isolate optimal models.</li>
+                        <li><strong>Achieved a 30% improvement in F1 score</strong> relative to existing deployed production baselines.</li>
+                    </ul>
+                </div>
+
+                <!-- I2R A*STAR -->
+                <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:border-blue-200 transition duration-200">
+                    <div class="flex justify-between items-start flex-wrap gap-2 mb-3">
+                        <div>
+                            <h4 class="text-base sm:text-lg font-bold text-gray-900">ML Research Assistant</h4>
+                            <p class="text-sm text-gray-600 font-medium">Institute for Infocomm Research (I²R), A*STAR</p>
+                        </div>
+                        <span class="px-2.5 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-md">Aug 2024 - Nov 2024</span>
+                    </div>
+                    <ul class="list-disc pl-5 text-sm text-gray-600 space-y-2">
+                        <li>Developed responsive binary and multiclass classification deep learning models combining multimodal clinical and image data fields.</li>
+                        <li>Evaluated feature extraction performance trade-offs between Vision Transformers (ViT) and ResNet-50 configurations.</li>
+                        <li>Achieved state-of-the-art Area Under the Curve (AUC) scores closely matched to live production environments.</li>
+                    </ul>
+                </div>
+
+                <!-- SIMTech A*STAR -->
+                <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:border-blue-200 transition duration-200">
+                    <div class="flex justify-between items-start flex-wrap gap-2 mb-3">
+                        <div>
+                            <h4 class="text-base sm:text-lg font-bold text-gray-900">Deep Learning In Robotics ML Intern</h4>
+                            <p class="text-sm text-gray-600 font-medium">Singapore Institute of Manufacturing Technology (SIMTech), A*STAR</p>
+                        </div>
+                        <span class="px-2.5 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-md">May 2024 - Aug 2024</span>
+                    </div>
+                    <ul class="list-disc pl-5 text-sm text-gray-600 space-y-2">
+                        <li>Engineered an end-to-end multi-threaded data labeling pipeline to systematically generate robust grasp points for robotic pick-and-place automation.</li>
+                        <li>Integrated Meta's Segment Anything Model (SAM) and OpenCV to clean architectural segmentations, maximizing valid grasp structures.</li>
+                        <li>Developed an interactive high-performance canvas GUI utilizing PySide 6 and OpenGL to visualize spatial grasp annotations.</li>
+                        <li>Leveraged Docker and the Nvidia Container Toolkit to containerize scalable training environments for cross-platform deployments.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- TAB 2: PROJECTS PANEL -->
+            <div id="panel-projects" class="space-y-6 hidden">
+                <!-- Apple Vision Pro FYP -->
+                <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:border-blue-200 transition duration-200">
+                    <div class="flex justify-between items-start flex-wrap gap-2 mb-3">
+                        <div>
+                            <h4 class="text-base sm:text-lg font-bold text-gray-900">XR Applications of the Apple Vision Pro</h4>
+                            <p class="text-sm text-gray-600 font-medium">Computer Science Final Year Project (FYP)</p>
+                        </div>
+                        <span class="px-2.5 py-1 bg-indigo-50 text-indigo-700 text-xs font-semibold rounded-md">Aug 2025 - May 2026</span>
+                    </div>
+                    <ul class="list-disc pl-5 text-sm text-gray-600 space-y-2">
+                        <li>Developed an immersive cross-reality application natively in Swift using Xcode targeted at spatial computing platforms.</li>
+                        <li>Profiled and benchmarked multiple open-source and proprietary LLMs on providing tailored exercise interventions for individuals with clinical obesity conditions.</li>
+                        <li>Designed evaluation metrics tracking contextual accuracy parameters, hardware memory footprint, and token latency.</li>
+                        <li>Mapped out variations in model attention mechanisms to identify structural efficiency limits.</li>
+                    </ul>
+                </div>
+
+                <!-- ClinicConnect -->
+                <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:border-blue-200 transition duration-200">
+                    <div class="flex justify-between items-start flex-wrap gap-2 mb-3">
+                        <div>
+                            <h4 class="text-base sm:text-lg font-bold text-gray-900">ClinicConnect</h4>
+                            <p class="text-sm text-gray-600 font-medium">Full Stack Healthcare Administration Application</p>
+                        </div>
+                        <span class="px-2.5 py-1 bg-indigo-50 text-indigo-700 text-xs font-semibold rounded-md">Aug 2024 - Nov 2024</span>
+                    </div>
+                    <ul class="list-disc pl-5 text-sm text-gray-600 space-y-2">
+                        <li>Collaborated in an agile scrum team of 5 to launch a feature-complete workflow engine automating patient onboarding and scheduling.</li>
+                        <li>Engineered modular code layers across Java and JavaFX, incorporating Jackson serialization and Gradle compilation.</li>
+                        <li>Maintained strict code test coverage targets by writing rigorous JUnit 5 suites to mitigate logic edge-case vulnerabilities.</li>
+                    </ul>
+                </div>
+
+                <!-- Computational Biology Project -->
+                <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:border-blue-200 transition duration-200">
+                    <div class="flex justify-between items-start flex-wrap gap-2 mb-3">
+                        <div>
+                            <h4 class="text-base sm:text-lg font-bold text-gray-900">Protein Folding Optimization via HPC Servers</h4>
+                            <p class="text-sm text-gray-600 font-medium">Computational Biology & Bioinformatics Systems</p>
+                        </div>
+                        <span class="px-2.5 py-1 bg-indigo-50 text-indigo-700 text-xs font-semibold rounded-md">Jan 2024 - May 2024</span>
+                    </div>
+                    <ul class="list-disc pl-5 text-sm text-gray-600 space-y-2">
+                        <li>Evaluated predictive protein folding orchestration pipelines (AlphaFold) inside large-scale High-Performance Computing (HPC) nodes.</li>
+                        <li>Configured custom job schedulers, automated Linux environments, and adjusted administrative Perl routines for parallel processing.</li>
+                        <li>Analyzed dimensional variance boundaries across heavy and light antibody structures leveraging massive PDB records.</li>
+                        <li>Quantified system folding precision boundaries across structural RMSD indices and TMAlign standards.</li>
+                    </ul>
+                </div>
+
+                <!-- API Gateway -->
+                <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:border-blue-200 transition duration-200">
+                    <div class="flex justify-between items-start flex-wrap gap-2 mb-3">
+                        <div>
+                            <h4 class="text-base sm:text-lg font-bold text-gray-900">API Gateway Based on CloudWeGo</h4>
+                            <p class="text-sm text-gray-600 font-medium">Independent Distributed Software Systems Project</p>
+                        </div>
+                        <span class="px-2.5 py-1 bg-indigo-50 text-indigo-700 text-xs font-semibold rounded-md">May 2023 - Aug 2023</span>
+                    </div>
+                    <ul class="list-disc pl-5 text-sm text-gray-600 space-y-2">
+                        <li>Constructed a highly scalable HTTP routing gateway processing high-throughput traffic using CloudWeGo’s Hertz and Kitex architectures.</li>
+                        <li>Modeled, executed, and integrated isolated debug microservices to test state boundary configurations.</li>
+                        <li>Isolated structural concurrency bottlenecks by utilizing runtime execution snapshots collected from Go's Pprof profiling suite.</li>
+                        <li>Achieved the prestigious <strong>Apollo 11 achievement tier</strong> (second highest rank designated within the project program).</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- COMPACT FOOTER -->
+    <footer class="bg-white border-t border-gray-200 py-6 mt-12 text-center text-xs text-gray-400">
+        <div class="max-w-5xl mx-auto px-4">
+            &copy; 2026 Patchandi Yugan Kumar. All rights reserved. Built natively with HTML & Tailwind.
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE TAB CONTROLLER LOGIC -->
+    <script>
+        function switchTab(tabId) {
+            const expPanel = document.getElementById('panel-experience');
+            const projPanel = document.getElementById('panel-projects');
+            const expBtn = document.getElementById('btn-experience');
+            const projBtn = document.getElementById('btn-projects');
+
+            if (tabId === 'experience') {
+                expPanel.classList.remove('hidden');
+                projPanel.classList.add('hidden');
+                
+                expBtn.classList.add('tab-active');
+                expBtn.classList.remove('text-gray-500', 'hover:text-blue-600');
+                
+                projBtn.classList.remove('tab-active');
+                projBtn.classList.add('text-gray-500', 'hover:text-blue-600');
+            } else {
+                projPanel.classList.remove('hidden');
+                expPanel.classList.add('hidden');
+                
+                projBtn.classList.add('tab-active');
+                projBtn.classList.remove('text-gray-500', 'hover:text-blue-600');
+                
+                expBtn.classList.remove('tab-active');
+                expBtn.classList.add('text-gray-500', 'hover:text-blue-600');
+            }
+        }
+    </script>
+</body>
+</html>
