@@ -24,8 +24,9 @@
                 <!-- Profile Image & Core Details -->
                 <div class="flex flex-col sm:flex-row items-center gap-5 text-center sm:text-left">
                     <!-- Profile Picture Placeholder -->
-                    <div class="w-24 h-24 rounded-full bg-gradient-to-tr from-blue-500 to-indigo-600 flex items-center justify-center text-white text-3xl font-bold shadow-md border-4 border-white overflow-hidden shrink-0">
-                        <img id="profile-img" src="https://via.placeholder.com/150" alt="YK" class="w-full h-full object-cover hidden" onerror="this.classList.add('hidden')">
+                    <div class="w-24 h-24 rounded-full bg-gradient-to-tr from-blue-500 to-indigo-600 flex items-center justify-center text-white text-3xl font-bold shadow-md border-4 border-white overflow-hidden shrink-0 relative">
+                        <!-- Links directly to your uploaded repo image -->
+                        <img id="profile-img" src="profile.jpg" alt="Patchandi Yugan Kumar" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden'); document.getElementById('profile-initials').style.display='none';" onerror="this.classList.add('hidden')">
                         <span id="profile-initials">YK</span>
                     </div>
                     
