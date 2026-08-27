@@ -12,6 +12,75 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         body { font-family: 'Inter', sans-serif; }
         .tab-active { border-color: #3b82f6; color: #3b82f6; font-weight: 600; }
+
+        /* Follow the user's operating-system/browser appearance setting */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #0f1117 !important;
+                color: #e5e7eb !important;
+            }
+
+            .bg-white {
+                background-color: #151922 !important;
+            }
+
+            .bg-gray-50 {
+                background-color: #0f1117 !important;
+            }
+
+            .bg-gray-100 {
+                background-color: #232936 !important;
+            }
+
+            .bg-blue-50,
+            .bg-indigo-50 {
+                background-color: rgba(79, 70, 229, 0.14) !important;
+            }
+
+            .text-gray-900 {
+                color: #f3f4f6 !important;
+            }
+
+            .text-gray-800 {
+                color: #e5e7eb !important;
+            }
+
+            .text-gray-700,
+            .text-gray-600 {
+                color: #c4c9d4 !important;
+            }
+
+            .text-gray-500 {
+                color: #9ca3af !important;
+            }
+
+            .text-gray-400 {
+                color: #7f8796 !important;
+            }
+
+            .border-gray-200 {
+                border-color: #303745 !important;
+            }
+
+            .border-blue-100,
+            .hover\:border-blue-200:hover {
+                border-color: #3b4c75 !important;
+            }
+
+            header,
+            footer {
+                background-color: #151922 !important;
+            }
+
+            .shadow-sm,
+            .shadow-inner {
+                box-shadow: none !important;
+            }
+
+            a:hover {
+                color: #93c5fd;
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased min-h-screen flex flex-col">
@@ -52,6 +121,42 @@
             </div>
         </div>
     </header>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 w-full">
+        <div class="bg-white border border-gray-200 rounded-xl p-6 sm:p-8 shadow-sm">
+            <h2 class="text-2xl font-bold text-gray-900 tracking-tight mb-4">About</h2>
+            <div class="space-y-4 text-sm sm:text-base leading-relaxed text-gray-600">
+                <p>
+                    Hey, I’m Yugan. I’m a final-year Double Degree student at the National University of Singapore (NUS),
+                    pursuing <strong class="text-gray-900">Computer Science and Life Sciences</strong>. I’m particularly
+                    interested in the intersection of <strong class="text-gray-900">machine learning, biology, and healthcare</strong>,
+                    and in using computational methods to tackle problems with real-world clinical impact.
+                </p>
+
+                <p>
+                    Over the past few years, I’ve had the opportunity to work on several healthcare-focused machine learning projects.
+                    At the <strong class="text-gray-900">Singapore-ETH Centre</strong>, I worked on predicting fall risk in older adults
+                    using wearable and clinical data, with a particular focus on building models that remain useful in the presence of
+                    missing information. I have also worked on applying machine learning to <strong class="text-gray-900">wound healing</strong>,
+                    giving me experience with another area where computational approaches can help make sense of complex clinical data.
+                </p>
+
+                <p>
+                    For my Computer Science Final Year Project, I explored how
+                    <strong class="text-gray-900">large language models and retrieval-augmented generation</strong> could be used to provide
+                    personalised exercise recommendations for children with obesity, with an emphasis on making the recommendations
+                    reliable and clinically appropriate.
+                </p>
+
+                <p>
+                    I’m excited to build a career in <strong class="text-gray-900">computational biology and healthcare AI</strong>,
+                    developing machine-learning systems that turn complex biological and clinical data into useful real-world tools.
+                </p>
+            </div>
+        </div>
+    </section>
 
     <!-- MAIN PORTFOLIO SHELL -->
     <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-grow w-full grid grid-cols-1 lg:grid-cols-3 gap-8">
