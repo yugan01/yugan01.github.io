@@ -121,43 +121,6 @@
             </div>
         </div>
     </header>
-
-
-    <!-- ABOUT SECTION -->
-    <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 w-full">
-        <div class="bg-white border border-gray-200 rounded-xl p-6 sm:p-8 shadow-sm">
-            <h2 class="text-2xl font-bold text-gray-900 tracking-tight mb-4">About</h2>
-            <div class="space-y-4 text-sm sm:text-base leading-relaxed text-gray-600">
-                <p>
-                    Hey, I’m Yugan. I’m a final-year Double Degree student at the National University of Singapore (NUS),
-                    pursuing <strong class="text-gray-900">Computer Science and Life Sciences</strong>. I’m particularly
-                    interested in the intersection of <strong class="text-gray-900">machine learning, biology, and healthcare</strong>,
-                    and in using computational methods to tackle problems with real-world clinical impact.
-                </p>
-
-                <p>
-                    Over the past few years, I’ve had the opportunity to work on several healthcare-focused machine learning projects.
-                    At the <strong class="text-gray-900">Singapore-ETH Centre</strong>, I worked on predicting fall risk in older adults
-                    using wearable and clinical data, with a particular focus on building models that remain useful in the presence of
-                    missing information. I have also worked on applying machine learning to <strong class="text-gray-900">wound healing</strong>,
-                    giving me experience with another area where computational approaches can help make sense of complex clinical data.
-                </p>
-
-                <p>
-                    For my Computer Science Final Year Project, I explored how
-                    <strong class="text-gray-900">large language models and retrieval-augmented generation</strong> could be used to provide
-                    personalised exercise recommendations for children with obesity, with an emphasis on making the recommendations
-                    reliable and clinically appropriate.
-                </p>
-
-                <p>
-                    I’m excited to build a career in <strong class="text-gray-900">computational biology and healthcare AI</strong>,
-                    developing machine-learning systems that turn complex biological and clinical data into useful real-world tools.
-                </p>
-            </div>
-        </div>
-    </section>
-
     <!-- MAIN PORTFOLIO SHELL -->
     <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-grow w-full grid grid-cols-1 lg:grid-cols-3 gap-8">
         
@@ -243,16 +206,54 @@
             
             <!-- Tab Headers -->
             <div class="flex border-b border-gray-200 mb-6 bg-white rounded-xl p-1 shadow-sm border">
-                <button onclick="switchTab('experience')" id="btn-experience" class="w-1/2 py-2.5 text-center text-sm font-medium transition rounded-lg tab-active border-b-2 border-transparent">
+                <button onclick="switchTab('about')" id="btn-about" class="w-1/3 py-2.5 text-center text-sm font-medium transition rounded-lg tab-active border-b-2 border-transparent">
+                    <i class="fa-regular fa-user mr-2"></i>About
+                </button>
+                <button onclick="switchTab('experience')" id="btn-experience" class="w-1/3 py-2.5 text-center text-sm font-medium transition text-gray-500 hover:text-blue-600 rounded-lg border-b-2 border-transparent">
                     <i class="fa-solid fa-briefcase mr-2"></i>Experience
                 </button>
-                <button onclick="switchTab('projects')" id="btn-projects" class="w-1/2 py-2.5 text-center text-sm font-medium transition text-gray-500 hover:text-blue-600 rounded-lg border-b-2 border-transparent">
+                <button onclick="switchTab('projects')" id="btn-projects" class="w-1/3 py-2.5 text-center text-sm font-medium transition text-gray-500 hover:text-blue-600 rounded-lg border-b-2 border-transparent">
                     <i class="fa-solid fa-diagram-project mr-2"></i>Projects
                 </button>
             </div>
 
-            <!-- TAB 1: EXPERIENCE PANEL -->
-            <div id="panel-experience" class="space-y-6">
+            <!-- TAB 1: ABOUT PANEL -->
+            <div id="panel-about">
+                <div class="bg-white border border-gray-200 rounded-xl p-6 sm:p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 tracking-tight mb-4">About</h2>
+            <div class="space-y-4 text-sm sm:text-base leading-relaxed text-gray-600">
+                <p>
+                    Hey, I’m Yugan. I’m a final-year Double Degree student at the National University of Singapore (NUS),
+                    pursuing <strong class="text-gray-900">Computer Science and Life Sciences</strong>. I’m particularly
+                    interested in the intersection of <strong class="text-gray-900">machine learning, biology, and healthcare</strong>,
+                    and in using computational methods to tackle problems with real-world clinical impact.
+                </p>
+
+                <p>
+                    Over the past few years, I’ve had the opportunity to work on several healthcare-focused machine learning projects.
+                    At the <strong class="text-gray-900">Singapore-ETH Centre</strong>, I worked on predicting fall risk in older adults
+                    using wearable and clinical data, with a particular focus on building models that remain useful in the presence of
+                    missing information. I have also worked on applying machine learning to <strong class="text-gray-900">wound healing</strong>,
+                    giving me experience with another area where computational approaches can help make sense of complex clinical data.
+                </p>
+
+                <p>
+                    For my Computer Science Final Year Project, I explored how
+                    <strong class="text-gray-900">large language models and retrieval-augmented generation</strong> could be used to provide
+                    personalised exercise recommendations for children with obesity, with an emphasis on making the recommendations
+                    reliable and clinically appropriate.
+                </p>
+
+                <p>
+                    I’m excited to build a career in <strong class="text-gray-900">computational biology and healthcare AI</strong>,
+                    developing machine-learning systems that turn complex biological and clinical data into useful real-world tools.
+                </p>
+            </div>
+                </div>
+            </div>
+
+            <!-- TAB 2: EXPERIENCE PANEL -->
+            <div id="panel-experience" class="space-y-6 hidden">
                 <!-- Singapore-ETH Centre -->
                 <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:border-blue-200 transition duration-200">
                     <div class="grid grid-cols-[minmax(0,1fr)_auto] gap-4 items-start mb-3">
@@ -304,7 +305,7 @@
                 </div>
             </div>
 
-            <!-- TAB 2: PROJECTS PANEL -->
+            <!-- TAB 3: PROJECTS PANEL -->
             <div id="panel-projects" class="space-y-6 hidden">
                 <!-- Apple Vision Pro FYP -->
                 <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:border-blue-200 transition duration-200">
@@ -429,30 +430,29 @@
     <!-- INTERACTIVE TAB CONTROLLER LOGIC -->
     <script>
         function switchTab(tabId) {
-            const expPanel = document.getElementById('panel-experience');
-            const projPanel = document.getElementById('panel-projects');
-            const expBtn = document.getElementById('btn-experience');
-            const projBtn = document.getElementById('btn-projects');
+            const panels = {
+                about: document.getElementById('panel-about'),
+                experience: document.getElementById('panel-experience'),
+                projects: document.getElementById('panel-projects')
+            };
 
-            if (tabId === 'experience') {
-                expPanel.classList.remove('hidden');
-                projPanel.classList.add('hidden');
-                
-                expBtn.classList.add('tab-active');
-                expBtn.classList.remove('text-gray-500', 'hover:text-blue-600');
-                
-                projBtn.classList.remove('tab-active');
-                projBtn.classList.add('text-gray-500', 'hover:text-blue-600');
-            } else {
-                projPanel.classList.remove('hidden');
-                expPanel.classList.add('hidden');
-                
-                projBtn.classList.add('tab-active');
-                projBtn.classList.remove('text-gray-500', 'hover:text-blue-600');
-                
-                expBtn.classList.remove('tab-active');
-                expBtn.classList.add('text-gray-500', 'hover:text-blue-600');
-            }
+            const buttons = {
+                about: document.getElementById('btn-about'),
+                experience: document.getElementById('btn-experience'),
+                projects: document.getElementById('btn-projects')
+            };
+
+            Object.keys(panels).forEach((key) => {
+                if (key === tabId) {
+                    panels[key].classList.remove('hidden');
+                    buttons[key].classList.add('tab-active');
+                    buttons[key].classList.remove('text-gray-500', 'hover:text-blue-600');
+                } else {
+                    panels[key].classList.add('hidden');
+                    buttons[key].classList.remove('tab-active');
+                    buttons[key].classList.add('text-gray-500', 'hover:text-blue-600');
+                }
+            });
         }
     </script>
 </body>
