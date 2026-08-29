@@ -125,7 +125,7 @@
     <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-grow w-full grid grid-cols-1 lg:grid-cols-3 gap-8">
         
         <!-- SIDEBAR: Publications, Distinctions & Core Tech Arsenal -->
-        <aside class="space-y-6 lg:col-span-1">
+        <aside id="sidebar" class="space-y-6 lg:col-span-1 hidden">
             
             <!-- 1. Publications (Moved to Top) -->
             <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
@@ -180,29 +180,10 @@
                     </li>
                 </ul>
             </div>
-
-            <!-- 3. Technical Skills (Moved to Bottom) -->
-            <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
-                <h3 class="text-sm font-bold uppercase tracking-wider text-gray-400 mb-3 flex items-center gap-2">
-                    <i class="fa-solid fa-code text-blue-500"></i> Core Skills
-                </h3>
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-2.5 py-1 bg-gray-100 text-gray-700 rounded-md text-xs font-medium border border-gray-200">Python</span>
-                    <span class="px-2.5 py-1 bg-gray-100 text-gray-700 rounded-md text-xs font-medium border border-gray-200">Java</span>
-                    <span class="px-2.5 py-1 bg-gray-100 text-gray-700 rounded-md text-xs font-medium border border-gray-200">Go</span>
-                    <span class="px-2.5 py-1 bg-gray-100 text-gray-700 rounded-md text-xs font-medium border border-gray-200">TypeScript</span>
-                    <span class="px-2.5 py-1 bg-gray-100 text-gray-700 rounded-md text-xs font-medium border border-gray-200">JavaScript</span>
-                    <span class="px-2.5 py-1 bg-gray-100 text-gray-700 rounded-md text-xs font-medium border border-gray-200">NodeJS</span>
-                    <span class="px-2.5 py-1 bg-gray-100 text-gray-700 rounded-md text-xs font-medium border border-gray-200">R</span>
-                    <span class="px-2.5 py-1 bg-blue-50 text-blue-700 rounded-md text-xs font-medium border border-blue-100">Deep Learning</span>
-                    <span class="px-2.5 py-1 bg-blue-50 text-blue-700 rounded-md text-xs font-medium border border-blue-100">Dynamic Programming</span>
-                    <span class="px-2.5 py-1 bg-blue-50 text-blue-700 rounded-md text-xs font-medium border border-blue-100">Software Engineering</span>
-                </div>
-            </div>
-        </aside>
+</aside>
 
         <!-- TWO TABS CONTENT WINDOW -->
-        <section class="lg:col-span-2 flex flex-col">
+        <section id="content-section" class="lg:col-span-3 flex flex-col">
             
             <!-- Tab Headers -->
             <div class="flex border-b border-gray-200 mb-6 bg-white rounded-xl p-1 shadow-sm border">
@@ -442,6 +423,9 @@
                 projects: document.getElementById('btn-projects')
             };
 
+            const sidebar = document.getElementById('sidebar');
+            const contentSection = document.getElementById('content-section');
+
             Object.keys(panels).forEach((key) => {
                 if (key === tabId) {
                     panels[key].classList.remove('hidden');
@@ -453,6 +437,16 @@
                     buttons[key].classList.add('text-gray-500', 'hover:text-blue-600');
                 }
             });
+
+            if (tabId === 'about') {
+                sidebar.classList.add('hidden');
+                contentSection.classList.remove('lg:col-span-2');
+                contentSection.classList.add('lg:col-span-3');
+            } else {
+                sidebar.classList.remove('hidden');
+                contentSection.classList.remove('lg:col-span-3');
+                contentSection.classList.add('lg:col-span-2');
+            }
         }
     </script>
 </body>
