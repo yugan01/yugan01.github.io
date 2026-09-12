@@ -93,7 +93,7 @@
                 <!-- Profile Image & Core Details -->
                 <div class="flex flex-col sm:flex-row items-center gap-5 text-center sm:text-left">
                     <!-- Profile Picture Placeholder -->
-                    <div class="w-24 h-24 rounded-full bg-gradient-to-tr from-blue-500 to-indigo-600 flex items-center justify-center text-white text-3xl font-bold shadow-md border-4 border-white overflow-hidden shrink-0 relative">
+                    <div class="w-32 h-32 rounded-full bg-gradient-to-tr from-blue-500 to-indigo-600 flex items-center justify-center text-white text-4xl font-bold shadow-md border-4 border-white overflow-hidden shrink-0 relative">
                         <!-- Links directly to your uploaded repo image -->
                         <img id="profile-img" src="profile.jpg" alt="Patchandi Yugan Kumar" class="w-full h-full object-cover hidden" onload="this.classList.remove('hidden'); document.getElementById('profile-initials').style.display='none';" onerror="this.classList.add('hidden')">
                         <span id="profile-initials">YK</span>
@@ -294,6 +294,32 @@
                         <li>Created a custom retagging framework and incorporated Human-in-the-Loop (HITL) orchestration mechanics to produce a holistically accurate, clinically safe exercise recommendation engine.</li>
                     </ul>
                 </div>
+
+                <!-- Agentic Workflow Generation & Execution System -->
+                <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:border-blue-200 transition duration-200">
+                    <div class="grid grid-cols-[minmax(0,1fr)_auto] gap-4 items-start mb-3">
+                        <div class="min-w-0">
+                            <h4 class="text-base sm:text-lg font-bold text-gray-900">
+                                Agentic Workflow Generation & Execution System
+                            </h4>
+                            <p class="text-sm text-gray-600 font-medium">Machine Learning Systems / Agentic AI Team Project</p>
+                            <a href="projects/agentic-workflows-project.pdf"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="inline-flex items-center gap-1.5 mt-2 text-xs text-blue-600 hover:text-blue-800 font-semibold transition">
+                                <i class="fa-regular fa-file-pdf"></i> PDF
+                            </a>
+                        </div>
+                        <span class="px-2.5 py-1 bg-indigo-50 text-indigo-700 text-xs font-semibold rounded-md whitespace-nowrap">Feb 2026 - Apr 2026</span>
+                    </div>
+                    <ul class="list-disc pl-5 text-sm text-gray-600 space-y-2">
+                        <li>Developed an end-to-end agentic workflow platform that converts natural-language requests into executable <strong>n8n-style workflow graphs</strong>, with multi-turn refinement and human-in-the-loop visual editing.</li>
+                        <li>Fine-tuned <strong>Qwen2.5-3B-Instruct with QLoRA</strong> using a two-stage curriculum, assistant-only loss masking, FlashAttention-2, and Liger Kernel, achieving <strong>100% JSON validity and schema compliance</strong> on the held-out test set.</li>
+                        <li>Built a distributed execution stack using <strong>FastAPI, vLLM, Prefect, and Redis</strong>, supporting dependency-aware scheduling, parallel execution, multi-user concurrency, real-time progress streaming, retries, and worker-failure recovery.</li>
+                        <li>Implemented and tested workflow nodes, aligned node parameters with the execution engine, and debugged model-serving, workflow-generation, and runtime integration issues.</li>
+                    </ul>
+                </div>
+
 
                 <!-- K-Means Analysis Project -->
                 <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:border-blue-200 transition duration-200">
